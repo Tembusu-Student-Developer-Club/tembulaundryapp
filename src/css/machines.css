@@ -1,0 +1,8 @@
+.machine {
+  border-top: 4px solid pink;
+  width: 70%;
+}
+.buttons{
+  border-top: 4px dotted pink;
+  width: 20%;
+}

@@ -1,0 +1,37 @@
+.story {
+  top:50%;
+  left:50%;
+  width:100px;
+  height:100px;
+  overflow:hidden;
+  margin: 0 auto
+}
+.story .alpha {
+  width:70px;
+  border-radius:50%;
+  position:absolute;
+  transform:translate(10.75%,10.75%);
+}
+.story .spinning {
+  fill:none;
+  stroke:#8a3ab8;
+  stroke-width:3px;
+  stroke-dasharray:9;
+  stroke-dashoffset:0;
+  stroke-linecap:round;
+  animation:loading 3000ms ease-in-out infinite alternate;
+}
+
+.story .still {
+  fill:none;
+  stroke:#8a3ab8;
+  stroke-width:3px;
+}
+
+@keyframes loading {
+  100% {
+    stroke:#cd476b;
+    stroke-dasharray:9;
+    transform:rotate(600deg);
+  }
+}
