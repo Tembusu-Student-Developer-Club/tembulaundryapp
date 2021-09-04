@@ -46,7 +46,7 @@ class App extends Component {
           status: obj[key]
         }
       })
-      let time = new Date(obj.timestamp).toLocaleString('en-SG')
+      let time = !!obj.timestamp ? new Date(obj.timestamp).toLocaleString('en-SG') : Date.now().toLocaleString('en-SG')
 
       this.setState({
         washers: wash,
